@@ -18,7 +18,7 @@ RUN yum update -y \
         openssh-clients \
     && yum clean all
 
-RUN gem install fpm
+RUN gem install fpm -v '1.6.2'
 
 RUN mkdir /tmp/fpmbuild
 VOLUME ["/tmp/fpmbuild"]
